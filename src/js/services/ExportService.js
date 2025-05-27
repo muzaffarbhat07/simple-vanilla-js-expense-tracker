@@ -1,6 +1,3 @@
-import { formatDate } from '../utils/formatters.js';
-import { CONFIG } from '../constants/config.js';
-
 export class ExportService {
     static exportToCSV(transactions) {
         const headers = ['Date', 'Description', 'Amount', 'Type', 'Context'];
