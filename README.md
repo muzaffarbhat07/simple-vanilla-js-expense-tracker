@@ -1,0 +1,1 @@
+A Simple Vanilla JS Expense Tracker

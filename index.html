@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        
+        <div class="balance-container">
+            <div class="balance-card">
+                <h3>Income</h3>
+                <p class="income" id="income">₹0.00</p>
+            </div>
+            <div class="balance-card">
+                <h3>Expenses</h3>
+                <p class="expenses" id="expenses">₹0.00</p>
+            </div>
+        </div>
+
+        <div class="summary-cards">
+            <div class="summary-card">
+                <div class="card-title">Total Savings</div>
+                <div class="card-value" id="total-savings">₹0.00</div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-primary" id="showTransactionForm">
+                <i class="fas fa-plus"></i> Add Transaction
+            </button>
+            <button class="btn btn-secondary" id="showFilterForm">
+                <i class="fas fa-filter"></i> Show Filters
+            </button>
+        </div>
+
+        <!-- Form Containers -->
+        <div id="transactionFormContainer" class="form-container">
+            <button class="close-form" data-form="transaction">&times;</button>
+            <div id="transactionForm"></div>
+        </div>
+
+        <div id="filterFormContainer" class="form-container">
+            <button class="close-form" data-form="filter">&times;</button>
+            <div id="filterForm"></div>
+        </div>
+
+        <div id="transactionList"></div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
