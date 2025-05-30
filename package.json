@@ -9,6 +9,7 @@
     "dev": "lite-server",
     "start": "lite-server",
     "build": "node scripts/build.js",
+    "vercel-build": "npm run build",
     "clean": "rimraf dist"
   },
   "keywords": [],
