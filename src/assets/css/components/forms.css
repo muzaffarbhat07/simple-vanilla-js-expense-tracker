@@ -49,6 +49,15 @@
   margin: 20px 0;
 }
 
+@media (max-width: 480px) {
+  .action-buttons {
+    flex-direction: column;
+  }
+  .action-buttons .btn {
+    width: 100%;      /* full-width buttons */
+  }
+}
+
 /* Animation */
 @keyframes slideDown {
   from {

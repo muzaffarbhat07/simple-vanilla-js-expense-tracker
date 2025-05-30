@@ -59,6 +59,19 @@
   display: flex;
   gap: 10px;
   margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+input[type="file"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.file-input-container .btn {
+  font-size: 15px;
+  padding: 8px 20px;
 }
 
 .import-info {
@@ -107,18 +120,4 @@
   color: #666;
   font-size: 0.9rem;
   margin-top: 5px;
-}
-
-.file-input-container {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-top: 10px;
-}
-
-input[type="file"] {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
 }

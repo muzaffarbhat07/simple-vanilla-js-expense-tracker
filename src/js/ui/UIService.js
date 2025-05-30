@@ -54,12 +54,8 @@ export class UIService {
         });
 
         // Import/Export
-        const actionButtons = document.querySelector('.action-buttons');
-        const importExportBtn = document.createElement('button');
-        importExportBtn.className = 'btn btn-secondary';
-        importExportBtn.innerHTML = '<i class="fas fa-file-import"></i> Import/Export';
-        importExportBtn.onclick = () => this.showImportExportModal();
-        actionButtons.appendChild(importExportBtn);
+        document.getElementById('importExportBtn').onclick = () => 
+            this.showImportExportModal();
     }
 
     toggleForm(formType) {

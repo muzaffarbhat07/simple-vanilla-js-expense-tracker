@@ -262,7 +262,7 @@
 }
 
 .transaction-amount .amount {
-  min-width: 120px; /* Ensures consistent width for amounts */
+  min-width: 100px; /* Ensures consistent width for amounts */
   text-align: right;
   display: inline-block;
 }

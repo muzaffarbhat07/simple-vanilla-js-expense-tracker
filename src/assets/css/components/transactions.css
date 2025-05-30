@@ -36,7 +36,15 @@
 .transaction-amount {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .transaction-amount {
+    flex-direction: column;
+    gap: 5px;
+    align-items: end;
+  }
 }
 
 .amount.income {
